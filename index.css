@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+
+/* test */
+.test div {
+  display: inline-block;
+  /* можно отобразить блоки в строку! */
+  /* строки переносятся блочно друг под друга */
+}
+.test div:first-child {
+  width: 99%;
+  background-color: yellow;
+}
+.test div:nth-child(2) {
+  height: 3em;
+  background-color: skyblue;
+}
+.test div:last-child {
+  height: 2em;
+  background-color: red;
+}
+
+/* menu */
+.menu {
+  position: relative;
+  display: flex;
+  top: 0px;
+  height: 5em;
+
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
+  align-content: center;
+
+  color: red;
+
+  background-color: whitesmoke;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 0.1;
+  padding: 0 1em 0 1em;
+  height: 3em;
+
+  cursor: pointer;
+
+  border: rgba(255, 0, 0, 0.03) solid 1px;
+}
+.menu__item:hover {
+  border: rgba(255, 0, 0, 0.11) solid 1px;
+}
+
+/* main-photo */
+.main-photo {
+  display: flex;
+
+  background-color: rgba(255, 0, 0, 0.356);
+}
+
+.main-photo__img {
+  width: 100%;
+  height: 100%;
+}
+
+/* two-columns */
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+
+  background: red;
+}
+
+.two-columns__column {
+  display: flex;
+  flex: 0.5;
+
+  min-height: 100px;
+  background: blue;
+}
+
+.two-columns__img {
+  width: 100%;
+  height: 100%;
+}
